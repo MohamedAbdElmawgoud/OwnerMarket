@@ -1,3 +1,145 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+        <div *ngIf="showSplash" class="splash">
+                <div class="bike">
+                </div>
+                <div class="">
+                </div>
+                <div class="shadow">
+                </div>
+                <div class="wheel">
+                </div>
+                <div class="wheel">
+                </div>
+                <div class="frame">
+                </div>
+                <div class="">
+                </div>
+                <div class="">
+                </div>
+                <div class="">
+                </div>
+        
+                <div class="pedal">
+                    </div>
+                    <div class="pedal">
+                    </div>
+                    <div class="light">
+                    </div>
+                    <div class="crate">
+                        </div>
+                        <div class="seat">
+                        </div>
+                        <div class="handlebar">
+                        </div>
+                        <!-- <div class="container">
+                                <div class="car-wrapper">
+                                  <div class="car-wrapper_inner">
+                              
+                                    <div class="car_outter">  
+                                      <div class="car">
+                                        <div class="body">
+                                          <div></div>
+                                        </div>
+                                        <div class="decos">
+                                          <div class="line-bot"></div>
+                                          <div class="door">
+                                            <div class="handle"></div>
+                                            <div class="bottom"></div>
+                                          </div>
+                                          <div class="window"></div> 
+                                          <div class="light"></div>
+                                          <div class="light-front"></div>
+                                          <div class="antenna"></div>
+                                          <div class="ice-cream">
+                                            <div class="cone"></div>
+                                          </div>  
+                                        </div>
+                                        <div>
+                                          <div class="wheel"></div>
+                                          <div class="wheel"></div>
+                                        </div>    
+                                        <div class="wind">
+                                          <div class="p p1"></div>
+                                          <div class="p p2"></div>
+                                          <div class="p p3"></div>
+                                          <div class="p p4"></div>
+                                          <div class="p p5"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              
+                                </div>
+                              
+                                <div class="background-stuff">
+                                  <div class="bg"></div>
+                                  <div class="bg bg-2"></div>
+                                  <div class="bg bg-3"></div>
+                                  <div class="ground"></div>
+                                </div>
+                              
+                              </div> -->
+                              
+                              
+            </div>
+    <ion-menu side="start" menuId="End" contentId="menuContent">
+        <ion-header>
+
+
+        </ion-header>
+        <ion-content>
+
+            <ion-card>
+                <img src='assets/icon/owner.png' class="profilePhoto">
+                <br>
+                <ion-card-title>
+                    Owner Name
+
+                </ion-card-title>
+                <ion-card-title class="email">
+
+                    email@gmail.com
+                </ion-card-title>
+            </ion-card>
+            <ion-list>
+
+
+
+
+                <ion-label> Communicate</ion-label>
+                <ion-item (click)="goTofaq()" lines="none">
+                    <ion-icon name="logo-buffer"></ion-icon>
+
+                    FAQ
+                </ion-item>
+
+                <ion-item (click)="goToinviteFreind()" lines="none">
+                    <ion-icon name="link"></ion-icon>
+
+                    invite friend
+                </ion-item>
+                <ion-item lines="none">
+                    <ion-icon name="star-outline"></ion-icon>
+                    Rate
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="paper-plane"></ion-icon>
+                    feedback
+                </ion-item>
+                <ion-label> Account</ion-label>
+                <ion-item lines="none" (click)="logout()">
+                    <ion-icon name="log-out"></ion-icon>
+
+                    log out
+                </ion-item>
+
+
+            </ion-list>
+        </ion-content>
+
+
+
+    </ion-menu>
+    <ion-router-outlet id="menuContent"></ion-router-outlet>
+   
 </ion-app>

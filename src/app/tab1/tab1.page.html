@@ -1,17 +1,79 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
+
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            Wa<strong>ssel</strong>
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <h1>
+        Your Dashboard
+    </h1>
+    <div class="flex">
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+
+        <div class="rebort">
+            <ion-label>
+                Delivery
+            </ion-label>
+            <p>
+                6
+            </p>
+            <button>Manege</button>
+        </div>
+        <div class="rebort">
+            <ion-label>
+                Transaction
+            </ion-label>
+            <p>
+                5629
+            </p>
+            <button>view</button>
+        </div>
+
+
+        <div class="rebort">
+            <ion-label>
+                Balance(USD)
+            </ion-label>
+
+            <p class="balance">
+                $ 23984
+            </p>
+            <button>Buy</button>
+        </div>
+    </div>
+    <h2>
+        Your Currencies
+    </h2>
+    <ion-item lines="none">
+        <ion-card>
+                <img src="assets/icon/bitcoin.png">
+                <ion-card-title>Add Delivery</ion-card-title>
+        </ion-card>
+
+        <ion-card>
+                <img src="assets/icon/Ethereum.png">
+                <ion-card-title>Add category</ion-card-title>
+        </ion-card>
+    </ion-item>
+
+    <ion-item lines="none">
+        <ion-card>
+                <img src="assets/icon/Ripple.png">
+               
+                <ion-card-title>Add Product</ion-card-title>
+
+        </ion-card>
+
+        <ion-card>
+                <img src="assets/icon/monero.svg">
+                <ion-card-title>Add Product</ion-card-title>
+        </ion-card>
+    </ion-item>
 </ion-content>

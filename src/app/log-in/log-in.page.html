@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  
+ </ion-header>
+ 
+ <ion-content [fullscreen]="true">
+   <div>
+     <img class="imgHeader" src="assets/img/back.jpg">
+   </div>
+  <div class="flex">
+    <h1> apllication Wassel</h1>
+      <div class="vl"></div>
+    <img class="logo"src="assets/icon/App Icon.png" >
+  </div>
+   <div class="parent">
+     <form [formGroup]="loginForm">
+   
+   
+       <!-- <ion-label>Email</ion-label> -->
+       <br>
+       <br>
+       <ion-item lines="none">
+         <ion-input formControlName="email" type="mail" placeholder="Enter Your mail" >
+           <ion-icon class="icon" name="mail-outline"></ion-icon>
+         </ion-input>
+       </ion-item>
+       <!-- <ion-label>password</ion-label> -->
+      
+       
+       <ion-item lines="none">
+         <ion-input formControlName="password" type="password" placeholder="Enter Your Password" >
+           <ion-icon class="icon" name="eye-off-outline"></ion-icon>
+         </ion-input>
+       </ion-item>
+   
+       <button class="login" (click)="submit()"> <strong> login</strong></button>
+       <a   (click)="forgetPassword()">Forget password ? </a>
+   </form>
+   </div>
+ </ion-content>
+ 

@@ -1,0 +1,122 @@
+ion-badge {
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 100%;
+}
+
+.category-block {
+  margin-bottom: 4px;
+}
+
+.category-banner {
+  border-left: 8px solid var(--ion-color-secondary);
+  background: var(--ion-color-light);
+  height: 40px;
+  padding: 10px;
+  font-weight: 500;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  
+p{
+  text-align: center;
+  font-size: 12px;
+  
+}
+
+ion-toolbar{
+  text-align: center;
+
+}
+ion-title{
+  margin-left: -5%
+}
+ion-card{
+  height: 120px;
+  width: 80%;
+  margin: 10%;
+  padding: 5px;
+  margin-bottom: 0px;
+  margin-top: 15px
+}
+img{
+  width: 30%;
+  height: 100px;
+  float: left;
+  margin-right: 79%;
+  margin-top: -8%;
+  position: absolute;
+  // margin-left: 10px;
+ // margin-bottom:10px
+}
+.view{
+  text-align: left;
+  margin-left: 46%;
+  margin-top: 10%;
+  font-size: 15px;
+  //display: inline;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row-reverse;
+ // margin-right: 40%
+}
+strong{
+  float: right;
+  margin-right: 3%;
+}
+h1{
+  font-size: 20px;
+  font-style: bold;
+  margin-top: 10%;
+  margin-left: 10%;
+  font-weight: bold;
+  margin-bottom: 0px
+}
+// fd4081 
+button{
+  background: #064b93;
+  width: 50px;
+  height: 20px;
+  border: 0px solid ;
+  border-radius: 1.2em;
+  color: white;
+  padding: 5px;
+  font-size: 10px;
+  margin-left: 30px;
+  margin-top: 10px;
+  
+}
+
+.btn{
+  
+  float: right;
+  
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10%;
+  margin-left: 40px;
+  margin-right: 40px;
+  color: white;
+  font-size: 25px;
+  font-style: bold;
+}
+.icon{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 200px;
+  margin-right: 45%;
+  margin-left: 45%;
+}
+.toolbar{
+  color: #064b93;;
+}

@@ -1,0 +1,44 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+            Wa<b class="toolbar">ssel</b>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-card-title>
+            <div>
+
+                <img src={{image}}>
+            </div>
+
+            <p class="view">
+
+                <strong> {{title}}</strong>
+
+            </p>
+
+        </ion-card-title>
+    </ion-card>
+    <button (click)="deleteProduct('5ec2f04e056d4500177a8443')">Delete</button>
+
+    <ion-card-title>
+
+        <p class="description">
+
+            Is your website content costing you sales? Learn how to improve your website copy with our free, curated list of high-impact
+            articles.
+
+
+
+        </p>
+        <button class="edit">Edit Product</button>
+
+
+    </ion-card-title>
+</ion-content>

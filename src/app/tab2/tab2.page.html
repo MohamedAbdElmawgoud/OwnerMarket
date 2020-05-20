@@ -1,17 +1,126 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-header>
+ 
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            Wa<b class="toolbar">ssel</b>
+        </ion-title>
     </ion-toolbar>
-  </ion-header>
+</ion-header>
+ 
+<ion-content>
+<h1>current Product</h1>
+<div class="flex" *ngFor="let data of product; index as i" >
+  <ion-card  >
+      <ion-card-title >
+          <div>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+              <img src={{data.image}} >
+          </div>
+
+        <p class="view" style="display:flex">
+           
+           <strong> {{data.name}} </strong>
+           <button (click)="viewDetails(data)">view</button>
+           </p>
+          
+           <p >   view</p>
+         
+    </ion-card-title>
+    </ion-card>
+
+
+  </div>
+<div class="flex" *ngFor="let data of products; index as i" >
+    <ion-card  >
+        <ion-card-title >
+            <div>
+
+                <img src={{data.img}} >
+            </div>
+
+          <p class="view" style="display:flex">
+             
+             <strong> {{data.title}} </strong>
+             <button (click)="viewDetails(data)">view</button>
+             </p>
+            
+             <p >   view</p>
+           
+      </ion-card-title>
+      </ion-card>
+
+
+    </div>
+
+    <button class="btn" (click)="addProduct()">
+        <ion-icon name="add"></ion-icon>
+    </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div *ngFor="let cat of items" class="category-block">
+ 
+    <!-- <ion-row no-padding class="category-banner">
+      <ion-col text-left button tappable (click)="cat.expanded = !cat.expanded" align-self-center>
+        {{ cat.category }}
+      </ion-col>
+    </ion-row> -->
+ 
+    <!-- <ion-slides [options]="sliderConfig">
+      <ion-slide *ngFor="let product of cat.products">
+        <div *ngIf="cat.expanded"> -->
+          <!-- <ion-card>
+            <ion-card-header>
+              <ion-card-title> -->
+
+               <!-- <p class="centered"> {{ product.name }} - ${{ product.price }}</p>
+              <!-- </ion-card-title>
+              <ion-card-content>
+                <img src="https://smile904.fm/wp-content/uploads/2019/09/books.jpg"> -->
+                <!-- <ion-button expand="full" (click)="addToCart(product)">Add to Cart</ion-button> -->
+              <!-- </ion-card-content>
+            </ion-card-header>
+          </ion-card> 
+        </div>
+      </ion-slide>
+    </ion-slides>
+ 
+  </div> -->
 </ion-content>

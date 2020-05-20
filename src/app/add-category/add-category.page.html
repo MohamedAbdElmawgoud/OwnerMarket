@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Wa<b class="toolbar">ssel</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="flex">
+        <h2> apllication Wassel</h2>
+          <div class="vl"></div>
+        <img class="logo"src="assets/icon/App Icon.png" >
+      </div>
+  <h1>Add Category</h1>
+  <form [formGroup]="categoryForm">
+      <ion-label>name</ion-label>
+      <br>
+      <br>
+    <ion-item lines="none">
+      
+      <ion-input formControlName="name" type="text" placeholder="Enter Category's name"class="form-control ">
+        <ion-icon class="icon" name="restaurant"></ion-icon>
+      </ion-input>
+    </ion-item>
+
+   
+      <ion-button class="login" (click)="AddCategory()"> <strong> add category</strong></ion-button>
+      
+  </form>
+</ion-content>

@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Wa<b class="toolbar">ssel</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!-- <div>
+        <img class="imgHeader" src="assets/img/back.jpg">
+      </div> -->
+     <div class="flex">
+       <h2> apllication Wassel</h2>
+         <div class="vl"></div>
+       <img class="logo"src="assets/icon/App Icon.png" >
+     </div>
+  <h1>Add Product</h1>
+  <form [formGroup]="productForm">
+      <ion-label>name</ion-label>
+      <br>
+      <br>
+    <ion-item lines="none">
+      
+      <ion-input formControlName="name" type="text" placeholder="Enter product's name"class="form-control ">
+        <ion-icon class="icon" name="restaurant"></ion-icon>
+      </ion-input>
+    </ion-item>
+
+    <ion-label>price</ion-label>
+    <br>
+    <br>
+    <ion-item lines="none">
+      
+      <ion-input formControlName="price" type="number" placeholder="Enter product's price"class="form-control ">
+        <ion-icon class="icon" name="card"></ion-icon>
+      </ion-input>
+    </ion-item>
+
+    <ion-label>Category</ion-label>
+    <br>
+    <br>
+    <ion-item lines="none">
+        
+      <ion-input formControlName="category" type="text" placeholder="Enter category name"class="form-control ">
+        <ion-icon class="icon" name="cart"></ion-icon>
+      </ion-input>
+    </ion-item>
+  
+    <ion-label>Photo</ion-label>
+    <br>
+    <br>
+    
+      <ion-item lines="none">
+        <input class="file" type="file" (input)="uploadFile($event)" >
+      <!-- <ion-icon class="icon" name="basket-outline"></ion-icon> -->
+  
+  </ion-item>
+
+
+   <!--  <ion-label>description</ion-label>
+    <br>
+    <br>
+    <ion-item lines="none">
+       
+        <textarea formControlName="description" type="text" class="form-control "placeholder="Enter Your description">
+          <!-- <ion-icon class="icon" name="chatboxes"></ion-icon> 
+        </textarea>
+      </ion-item> -->
+
+      <ion-button class="login" (click)="AddProduct()"> <strong> add product</strong></ion-button>
+      
+  </form>
+  <button class="btn" (click)="addCategory()">
+      <ion-icon name="add"></ion-icon>
+  </button>
+
+</ion-content>
